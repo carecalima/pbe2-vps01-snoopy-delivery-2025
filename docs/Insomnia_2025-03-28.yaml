@@ -1,0 +1,272 @@
+type: collection.insomnia.rest/5.0
+name: prova pbe2
+meta:
+  id: wrk_e51078d158d4470eb1df2abd50d4b594
+  created: 1743183059453
+  modified: 1743183059453
+collection:
+  - name: Motorista
+    meta:
+      id: fld_b4faf19098c44a8393764082f50811f6
+      created: 1743183077278
+      modified: 1743183077278
+      sortKey: -1743183077278
+    children:
+      - url: http://localhost:3001/motoristas
+        name: read
+        meta:
+          id: req_0eb267384bd442bdbaf00588981a4dbb
+          created: 1743183102311
+          modified: 1743183667119
+          isPrivate: false
+          sortKey: -1743183102311
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: readOne
+        meta:
+          id: req_b478280ea53b476b83807ba4f0a9ca6e
+          created: 1743183107744
+          modified: 1743183662831
+          isPrivate: false
+          sortKey: -1743183107744
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: post
+        meta:
+          id: req_ddb1bc68474e4744a6d610bd3e1e9b84
+          created: 1743183111724
+          modified: 1743185555375
+          isPrivate: false
+          sortKey: -1743183111724
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "motorista6@petshop.com",
+                "nome": "Martins",
+                "telefones": null
+              }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/6
+        name: put
+        meta:
+          id: req_7db49ffd8b1d40b0bcb87b38bf5e7c31
+          created: 1743183119271
+          modified: 1743185572315
+          isPrivate: false
+          sortKey: -1743183119271
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "motorista6@petshop.com",
+                "nome": "Martins",
+                "telefones": null
+              }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/2
+        name: delete
+        meta:
+          id: req_799dd1f57c2341539b1cab2382a3b768
+          created: 1743183121410
+          modified: 1743185704281
+          isPrivate: false
+          sortKey: -1743183121410
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pedidos
+    meta:
+      id: fld_d8a9f34e14994a33915a45e16f49824c
+      created: 1743183088867
+      modified: 1743183088867
+      sortKey: -1743183088867
+    children:
+      - url: http://localhost:3001/pedidos
+        name: post
+        meta:
+          id: req_801c9ecf75174aa5b49abe5b79f44471
+          created: 1743183215583
+          modified: 1743186364268
+          isPrivate: false
+          sortKey: -1743183215583
+        method: POST
+        body:
+          mimeType: application/json
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/6
+        name: delete
+        meta:
+          id: req_663be00226154955a5ee8b906fa3e1d6
+          created: 1743183218902
+          modified: 1743186481226
+          isPrivate: false
+          sortKey: -1743183218902
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos/4
+        name: put
+        meta:
+          id: req_d35900c77ef94270afa784bfe0208323
+          created: 1743183221799
+          modified: 1743186399590
+          isPrivate: false
+          sortKey: -1743183221799
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-2
+             {
+                "valor": 32.90,
+                "produto": "Osso Natural para Cães",
+                "endereco": "Rua do Lago",
+                "numero": "555",
+                "complemento": null,
+                "cep": "04030-050",
+                "motoristaId": 4
+              }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: read
+        meta:
+          id: req_2198cb934cf34af18382b30dd5bb12a6
+          created: 1743183223828
+          modified: 1743185814533
+          isPrivate: false
+          sortKey: -1743183223828
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: readOne
+        meta:
+          id: req_8a0370f242d14ca4976efec79a466518
+          created: 1743183225348
+          modified: 1743183635915
+          isPrivate: false
+          sortKey: -1743183225348
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.1
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b26c1d0ab5a164834d4aa3dc08342f1d26f976a1
+    created: 1743183059465
+    modified: 1743183059465
+environments:
+  name: Base Environment
+  meta:
+    id: env_b26c1d0ab5a164834d4aa3dc08342f1d26f976a1
+    created: 1743183059458
+    modified: 1743183059458
+    isPrivate: false
